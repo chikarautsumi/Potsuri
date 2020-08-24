@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Potsuri</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,6 +11,13 @@
   </head>
 
   <body>
+    <div class="header-menu">
+      <a href="/tweets" >Potsuri</a>
+      <ul id="header-menu">
+        <li><a href="/tweets" >ツイート一覧</a></li>
+      </ul>
+    </div>
     <%= yield %>
+    <div id="footer"><p>© 2020 Copyright DIVE INTO CODE Corp.</p></div>
   </body>
 </html>
