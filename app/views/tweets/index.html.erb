@@ -1,0 +1,10 @@
+<div class="article">
+    <table>
+        <% @tweets.each do |tweet| %>
+        <%= link_to %>
+                <tr>
+                    <td><%= link_to tweet.content, tweet_path(tweet.id)%></td>
+                </tr>
+        <% end %>
+    </table>
+</div>
