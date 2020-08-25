@@ -1,5 +1,5 @@
 <div class="article">
-    <%= form_with(model: @tweet, local: true) do |form| %>
+    <%= form_with model: @tweet, local: true do |form| %>
         <ul>
             <% @tweet.errors.full_messages.each do |message| %>
                 <li><%= message %></li>
