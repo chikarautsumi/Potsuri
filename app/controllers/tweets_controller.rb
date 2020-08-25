@@ -17,6 +17,11 @@ class TweetsController < ApplicationController
             render action: :new
         end
     end
+
+    def show
+        @tweet = Test.find(params[:id].to_i)
+    end
+
     private
     def tweet_params
         params.require(:tweet).permit(:content)
