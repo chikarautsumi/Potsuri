@@ -19,7 +19,7 @@ class TweetsController < ApplicationController
     end
 
     def show
-        @tweet = Test.find(params[:id].to_i)
+        @tweet = Tweet.find(params[:id])
     end
 
     private
