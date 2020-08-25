@@ -1,0 +1,14 @@
+<div class="article">
+    <%= form_with model: @tweet, local: true do |form| %>
+        <ul>
+            <% @tweet.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+        </ul>
+        <div class="tweet_text_box">
+            <%= form.label :content %>
+            <%= form.text_field :content %>
+        </div>
+        <%= form.submit %>
+    <% end %>
+</div>
