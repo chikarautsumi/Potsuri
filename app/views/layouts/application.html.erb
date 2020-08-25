@@ -15,10 +15,10 @@
       <a href="/tweets" >Potsuri</a>
       <ul id="header-menu">
         <li><%= link_to 'ツイート一覧', tweets_path%></li>
-        <li><%= link_to 'Poturi投稿', new_tweets_path%></li>
+        <li><%= link_to 'Poturi投稿', new_tweet_path%></li>
       </ul>
     </div>
-    
+
     <!-- エラーメッセージ -->
     <% if flash[:notice] %>
       <p class="flash"><%= flash[:notice] %></p>
