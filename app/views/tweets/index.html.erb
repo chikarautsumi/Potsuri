@@ -2,7 +2,7 @@
     <table>
         <% @tweets.each do |tweet| %>
                 <tr>
-                    <td><%= link_to tweet.content, show_tweet_path(tweet.id)%></td>
+                    <td><%= link_to tweet.content, tweet_path(tweet.id)%></td>
                 </tr>
         <% end %>
     </table>
