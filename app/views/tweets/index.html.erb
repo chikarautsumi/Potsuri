@@ -1,9 +1,7 @@
-<div class="article">
-    <table>
+<div id="article">
         <% @tweets.each do |tweet| %>
-                <tr>
-                    <td><%= link_to tweet.content, tweet_path(tweet.id)%></td>
-                </tr>
+                <div class="tweet_sell">
+                    <%= link_to tweet.content, tweet_path(tweet.id)%>
+                </div>
         <% end %>
-    </table>
 </div>

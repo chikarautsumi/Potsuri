@@ -1,11 +1,11 @@
-<div class="article">
-    <table>
-            <tr>
-                <td><%= @tweet.content %></td>
-            </tr>
-            <tr>
-                <td><%= link_to '編集', edit_tweet_path(@tweet.id) %></td>
-                <td><%= link_to '削除', tweet_path(@tweet.id), method: :delete %></td>
-            </tr>
-    </table>
+<div id="article">
+    <div class="tweet_sell">
+            <div class="tweet_content">
+                <%= @tweet.content %>
+            </div>
+            <div class="content_edit">
+                <%= link_to '編集', edit_tweet_path(@tweet.id) %>
+                <%= link_to '削除', tweet_path(@tweet.id), method: :delete %>
+            </div>
+    </div>
 </div>

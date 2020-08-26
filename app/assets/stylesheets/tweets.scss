@@ -1,3 +1,30 @@
 // Place all the styles related to the tweets controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+div#article {
+    height: 100%;
+}
+
+div#article ul.error_message {
+    list-style: none;
+    color:red;
+}
+
+div#article div.tweet_sell {
+    height: 100%;
+    border: 1px solid #949494;
+}
+
+div.tweet_sell div.tweet_content {
+    border-bottom: 1px solid #949494;
+}
+
+div.tweet_sell div.content_edit {
+    text-align: right;
+}
+
+input[type="text"] {
+    width: 990px;
+    height: 300px;
+}
