@@ -29,4 +29,6 @@ group :test do
   gem 'chromedriver-helper'
 end
 
+gem 'rails-i18n'
+gem 'jquery-rails'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
