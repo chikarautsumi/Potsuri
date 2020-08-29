@@ -1,0 +1,8 @@
+<div id="article">
+    <h3>以下の内容で、送信する。</h3>
+    <%= form_with model: @tweet, local: true, url: tweets_path do |form| %>
+        <%= form.hidden_field :content %>
+        <p><%= @tweet.content %></p>
+        <%= form.submit  "登録する" %>
+    <% end %>
+</div>
